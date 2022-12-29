@@ -1,0 +1,331 @@
+@media (max-width: 700px) {
+    .header {
+        position: relative;
+        background-image: url(../images/mobile/image-header.jpg);
+        height: 100%;
+    }
+
+    #menu__toggle {
+        opacity: 0;
+    }
+
+    #menu__toggle:checked+.menu__btn>span {
+        transform: rotate(45deg);
+    }
+
+    #menu__toggle:checked+.menu__btn>span::before {
+        top: 0;
+        transform: rotate(0deg);
+    }
+
+    #menu__toggle:checked+.menu__btn>span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    .menu__btn {
+        top: 1.8rem;
+        right: 7%;
+        position: absolute;
+        width: 1.5rem;
+        height: 1rem;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .menu__btn>span,
+    .menu__btn>span::before,
+    .menu__btn>span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: var(--white);
+        transition-duration: .25s;
+    }
+
+    .menu__btn>span::before {
+        content: '';
+        top: -8px;
+    }
+
+    .menu__btn>span::after {
+        content: '';
+        top: 8px;
+    }
+
+    .header ul {
+        position: absolute;
+        top: 20%;
+        width: 80%;
+        gap: 1.25rem;
+        gap: 1.8rem;
+        height: fit-content;
+        background-color: var(--white);
+        left: -100%;
+        padding: 1.8rem;
+        align-items: center;
+        flex-direction: column;
+        background-size: contain;
+        transition-duration: .25s;
+    }
+
+    .header ul::after {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        border-left: 20px solid transparent;
+        border-bottom: 20px solid var(--white);
+        top: -1.25rem;
+        right: 0%;
+    }
+
+    .header li a {
+        color: var(--dark-grayish-blue);
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .header .header-menu ul li:last-child a {
+        background: var(--yellow);
+    }
+
+    .aparecer {
+        left: 10% !important;
+    }
+
+    .header .header-heading {
+        text-align: center;
+        padding: 10%;
+    }
+
+    .header h1 {
+        font-size: 3rem;
+    }
+
+    .intro article {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro article div {
+        padding: 10%;
+    }
+
+    .intro article:first-of-type {
+        flex-direction: column-reverse;
+    }
+
+    .intro a {
+        align-self: center;
+    }
+
+    .intro img {
+        width: 100%;
+    }
+
+    .works {
+        grid-template-columns: 1fr;
+    }
+
+    .graphic {
+        background: url(../images/mobile/image-graphic-design.jpg);
+        background-size: cover;
+    }
+
+    .photography {
+        background: url(../images/mobile/image-photography.jpg);
+        background-size: cover;
+    }
+
+    .testimonials {
+        padding: 10% 5%;
+    }
+
+    .testimonials section {
+        gap: 50px;
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials article img {
+        margin-bottom: 1.25rem;
+    }
+
+    .testimonials p {
+        margin-bottom: 1.5rem;
+    }
+
+    .images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer {
+        padding: 20%;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+    .header {
+        position: relative;
+        background-image: url(../images/desktop/image-header.jpg);
+    }
+
+    #menu__toggle {
+        opacity: 0;
+    }
+
+    #menu__toggle:checked+.menu__btn>span {
+        transform: rotate(45deg);
+    }
+
+    #menu__toggle:checked+.menu__btn>span::before {
+        top: 0;
+        transform: rotate(0deg);
+    }
+
+    #menu__toggle:checked+.menu__btn>span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    .menu__btn {
+        top: 1.8rem;
+        right: 7%;
+        position: absolute;
+        width: 1.5rem;
+        height: 1rem;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .menu__btn>span,
+    .menu__btn>span::before,
+    .menu__btn>span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: var(--white);
+        transition-duration: .25s;
+    }
+
+    .menu__btn>span::before {
+        content: '';
+        top: -8px;
+    }
+
+    .menu__btn>span::after {
+        content: '';
+        top: 8px;
+    }
+
+    .header ul {
+        position: absolute;
+        top: 20%;
+        width: 80%;
+        gap: 1.25rem;
+        gap: 1.8rem;
+        height: fit-content;
+        background-color: var(--white);
+        left: -100%;
+        padding: 1.8rem;
+        align-items: center;
+        flex-direction: column;
+        background-size: contain;
+        transition-duration: .25s;
+    }
+
+    .header ul::after {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        border-left: 20px solid transparent;
+        border-bottom: 20px solid var(--white);
+        top: -1.25rem;
+        right: 0%;
+    }
+
+    .header li a {
+        color: var(--dark-grayish-blue);
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .header .header-menu ul li:last-child a {
+        background: var(--yellow);
+    }
+    .aparecer {
+        left: 10% !important;
+    }
+
+    .header .header-heading {
+        text-align: center;
+        padding: 10%;
+    }
+
+    .header h1 {
+        font-size: 3rem;
+    }
+
+    .intro article {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro article div {
+        padding: 10%;
+    }
+
+    .intro article:first-of-type {
+        flex-direction: column-reverse;
+    }
+
+    .intro a {
+        align-self: center;
+    }
+
+    .intro img {
+        width: 100%;
+    }
+
+    .works {
+        grid-template-columns: 1fr;
+    }
+
+    .graphic {
+        background: url(../images/mobile/image-graphic-design.jpg);
+        background-size: cover;
+    }
+
+    .photography {
+        background: url(../images/mobile/image-photography.jpg);
+        background-size: cover;
+    }
+
+    .testimonials {
+        padding: 10% 5%;
+    }
+
+    .testimonials section {
+        gap: 3.1rem;
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials article img {
+        margin-bottom: 1.25rem;
+    }
+
+    .testimonials p {
+        margin-bottom: 1.5rem;
+    }
+
+    .images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer {
+        padding: 10%;
+    }
+}
